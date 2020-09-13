@@ -1,0 +1,16 @@
+print('you can convert you mass from kg to pounds and vice-versa')
+kg_or_pounds = input('in which term do you want your mass? kg or pounds: ')
+while True:
+    if kg_or_pounds.upper() == 'KG':
+        pounds = int(input('you weight in pounds: '))
+        print(f'you weight is {pounds/2.205} kgs')
+        break
+    elif kg_or_pounds.upper() == 'POUNDS':
+        kgs = int(input('you weight in kgs: '))
+        print(f'you weight is {kgs*2.205} pounds')
+        break
+    elif kg_or_pounds.upper() == 'QUIT':
+        break
+    else:
+        print(" please enter only 'kg' or 'pounds'. 'quit' to get out of the program. ")
+        break
